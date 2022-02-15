@@ -14,7 +14,7 @@ def send_notification(name,mail):
     subject = "Important Notification"
     to_email = mail
     text = "Hey! Dear parent, Image uploaded by your child " + name + " does not contain food."
-    message = EmailMessage(subject, text,'shivlanipalak@gmail.com', [to_email])
+    message = EmailMessage(subject, text,'your mail id', [to_email])
     message.send()
 
 

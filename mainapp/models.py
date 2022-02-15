@@ -31,11 +31,3 @@ class Image(models.Model):
     approved_by = models.CharField(max_length=100)
 
 
-# @receiver(post_save, sender=Image)
-# def send_mail_to_user(sender, instance, created, **kwargs):
-#     if instance.group == 'Unknown':
-#         subject = "Important Notification"
-#         to_email = instance.kid.parentemail
-#         text = "Hey! Dear parent, Image uploaded by your child " + instance.kid.name + " does not contain food."
-#         message = EmailMessage(subject, text,'shivlanipalak@gmail.com', [to_email])
-#         message.send()
